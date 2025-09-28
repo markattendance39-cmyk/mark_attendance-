@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Defaulters - MARK ATTENDANCE</title>
+</head>
+<body>
+    <h1>Defaulters List</h1>
+    {% if defaulters %}
+        <table border="1">
+            <tr><th>Roll</th><th>Attendance %</th></tr>
+            {% for d in defaulters %}
+            <tr>
+                <td>{{ d['Roll'] }}</td>
+                <td>{{ "%.2f"|format(d['Percentage']) }}%</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No defaulters found.</p>
+    {% endif %}
+    <a href="/">Back to Home</a>
+</body>
+</html>
