@@ -4,3 +4,5 @@ pandas
 plotly
 apscheduler
 gunicorn
+opencv-python
+opencv-contrib-python
