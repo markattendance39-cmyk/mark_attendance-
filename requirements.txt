@@ -1,8 +1,10 @@
 flask
 flask_sqlalchemy
-pandas
-plotly
-apscheduler
-gunicorn
 opencv-python
 opencv-contrib-python
+apscheduler
+plotly
+gunicorn
+cmake
+dlib
+face_recognition
